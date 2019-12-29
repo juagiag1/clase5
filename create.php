@@ -7,7 +7,7 @@
 
   // Insertamos los valores en la tabla de datos
   $sql = "";
-  $result = mysqli_query($link, $slq);
+  $result = mysqli_query($link, $sql);
 
   if($result){
     header("Location:index.php?createuser=ok");
