@@ -122,7 +122,7 @@ if (isset($_GET['deleteuser'])) {
       <td>'.$row["email"].'</td>
       <td>'.$row["password"].'</td>
       <td>'.$row["name"].'</td>
-      <td><a href="./delete.php"><i class="fa fa-trash"></i></a></td>
+      <td><a href="./delete.php?id='.$row["id"].'"><i class="fa fa-trash"></i></a></td>
     </tr>';
         }
       }
