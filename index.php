@@ -55,46 +55,6 @@
   </div>
 </div>
 
-<div style="margin-top: 20px;"></div>
-
-<?php
-if (isset($_GET['createuser'])) {
-  if ($_GET['createuser']=='ok') {
-    ?>
-    <div class="alert alert-success alert-dismissible">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Usuario insertado correctamente!</strong>
-    </div>
-    <?php
-  }else if ($_GET['createuser']=='ko') {
-    ?>
-    <div class="alert alert-warning alert-dismissible">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Error al insertar el usuario</strong>, vuelve a intentarlo más tarde.
-    </div>
-    <?php
-  }
-}
-
-if (isset($_GET['deleteuser'])) {
-  if ($_GET['deleteuser']=='ok') {
-    ?>
-    <div class="alert alert-success alert-dismissible">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Usuario borrado correctamente!</strong>
-    </div>
-    <?php
-  }else if ($_GET['deleteuser']=='ko') {
-    ?>
-    <div class="alert alert-danger alert-dismissible">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Error al borrar el usuario</strong>, vuelve a intentarlo más tarde.
-    </div>
-    <?php
-  }
-}
-
-?>
 
 
 <table class="table table-striped">
